@@ -32,9 +32,10 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'git' \
-  'history-substring-search' \
   'tmux' \
+  'git' \
+  'syntax-highlighting' \
+  'history-substring-search' \
   'prompt'
 
 #
@@ -64,6 +65,10 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 #
 # History Substring Search
 #
+
+zstyle ':prezto:module:history-substring-search' case-sensitive 'yes'
+
+zstyle ':prezto:module:history-substring-search' color 'yes'
 
 # Set the query found color.
 zstyle ':prezto:module:history-substring-search:color' found ''
@@ -151,7 +156,7 @@ zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'my_id_rsa'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
+# zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
