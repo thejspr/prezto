@@ -39,6 +39,13 @@ zstyle ':prezto:load' pmodule \
   'prompt'
 
 #
+# Deer
+#
+
+# Set key bindings
+# zstyle ':prezto:module:deer' key-bindings '^k'
+
+#
 # Autosuggestions
 #
 
@@ -145,6 +152,10 @@ zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'my_id_rsa'
 #   'builtin' 'bg=blue' \
 #   'command' 'bg=blue' \
 #   'function' 'bg=blue'
+#
+# Set syntax pattern styles.
+# zstyle ':prezto:module:syntax-highlighting' pattern \
+#   'rm*-rf*' 'fg=white,bold,bg=red'
 
 #
 # Terminal
